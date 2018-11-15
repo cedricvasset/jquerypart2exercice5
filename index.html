@@ -12,18 +12,22 @@
     <button type="button" name="button">Envoyer</button>
   </form>
   <script>
-  $('#lastName').focus(function(){
-    $('#lastName').css ('border','1px solid green')
-  })
-  $('#firstName').focus(function(){
-    $('#firstName').css ('border','1px solid green')
-  })
-  $('#lastName').focusout(function(){
-    $('#lastName').css ('border','1px solid red')
-  })
-  $('#firstName').focusout(function(){
-    $('#firstName').css ('border','1px solid red')
-  })
+  //    $('#lastName, 'firstName').focus(function(){
+  //     $(this).css ('border','1px solid green') this est l elemnet qui a provoqué l évènement.
+  $(function(){
+    $('#lastName').focus(function(){
+      $('#lastName').css ('border','1px solid green')
+    });
+    $('#firstName').focus(function(){
+      $('#firstName').css ('border','1px solid green')
+    });
+    $('#lastName').focusout(function(){
+      $('#lastName').css ('border','1px solid red')
+    });
+    $('#firstName').focusout(function(){
+      $('#firstName').css ('border','1px solid red')
+    });
+  });
   </script>
 </body>
 </html>
